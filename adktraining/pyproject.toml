@@ -1,0 +1,18 @@
+[project]
+name = "adktraining"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-adk>=2.11.0",
+    "mcp[cli]>=2.3.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+adktraining = "adktraining:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
